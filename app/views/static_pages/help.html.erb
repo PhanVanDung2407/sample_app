@@ -1,0 +1,14 @@
+<% provide :title, t(".help") %>
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= yield(:title) %><%= t ".title" %></title>
+  </head>
+  <body>
+    <h1><%= t ".help" %></h1>
+    <p>
+      <%= t ".get_help" %>
+      <a href="http://www.railstutorial.org/help"><%= t ".rails_tutorial" %></a><%= t ".To"%><a href="http://www.railstutorial.org/book"><em><%= t "static_pages.about.rubyonrails" %></em> <%= t "static_pages.about.book" %></a>.
+    </p>
+  </body>
+</html>

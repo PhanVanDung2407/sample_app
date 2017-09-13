@@ -1,0 +1,15 @@
+<% provide :title, t(".home") %>
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= yield(:title) %> <%= t "static_pages.home.title" %></title>
+  </head>
+  <body>
+    <h1> <%= t ".webname" %></h1>
+    <p>
+      <%= t ".thisis" %>
+      <a href="http://www.railstutorial.org/"><%= t "static_pages.about.rubyonrails" %></a>
+      <%= t ".sample_application" %>
+    </p>
+  </body>
+</html>
