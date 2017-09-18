@@ -54,7 +54,21 @@ en:
       rails_tutorial: "Rails Tutorial help page"
       to: "To get help on this sample app, see the"
     home:
-      home: "Home"
-      webname: "sample App"
+      welcome: "Welcome to the Sample App"
+      ruby: "Ruby on Rails Tutorial"
       thisis: "This is the home page for the"
       sample_application: "sample application."
+  layouts:
+    footer:
+      the: "The"
+      by: "By"
+      rubyonrails: "Ruby on Rails Tutorial"
+      michael: "Michael Hartl"
+      new: "News"
+    header:
+      home: "Home"
+      help: "Help"
+      Login: "Log in"
+  users:
+    new:
+      signup: "Sign up"
