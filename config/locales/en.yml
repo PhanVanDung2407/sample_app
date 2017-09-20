@@ -72,3 +72,4 @@ en:
   users:
     new:
       signup: "Sign up"
+      error_message: "Error !"
