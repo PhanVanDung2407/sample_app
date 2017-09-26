@@ -74,3 +74,6 @@ en:
       signup: "Sign up"
       error_message: "Error !"
       invalid_email_password: "Invalid email/password combination"
+  sessions:
+    new:
+      remember: "Remember me on this computer"
