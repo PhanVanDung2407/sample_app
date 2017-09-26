@@ -72,8 +72,19 @@ en:
   users:
     new:
       signup: "Sign up"
+      all_users: "All users"
+      edit_user: "Edit user"
       error_message: "Error !"
       invalid_email_password: "Invalid email/password combination"
+      profile_u: "Profile updated"
+      user_deleted: "User deleted"
+      please_login: "Please log in."
+    index:
+      all_users: "All users"
   sessions:
     new:
       remember: "Remember me on this computer"
+  concerns:
+    users_controller:
+      delete_use: "complete"
+      eror_destroy: "Error"
