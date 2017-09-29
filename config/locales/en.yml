@@ -31,6 +31,7 @@
 
 en:
   hello: "Hello world"
+  account: "akjckj"
   static_pages:
     about:
       about: "About "
@@ -84,7 +85,15 @@ en:
   sessions:
     new:
       remember: "Remember me on this computer"
+      Login: "Login"
+    create:
+      check: "Check your email for the activation link."
+      account: "Account not activated. "
   concerns:
     users_controller:
+      please: "Please check your email to activate your account."
       delete_use: "complete"
       eror_destroy: "Error"
+    account_activations_controller:
+      account_activated: "Account activated!"
+      invalid: "Invalid activation link"

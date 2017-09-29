@@ -11,14 +11,10 @@ class UsersController < ApplicationController
     redirect_to users_path
   end
 
-  def index
-    @users = User.sort_by_name.paginate(page: params[:page], per_page: Settings.per_page.config)
-  end
+  def index; end
 
   def show
-    return if @user
-    flash[:danger] = t "controllers.users_controller.notfind"
-    render "static_pages/home"
+    redirect_to root_url && return unless FILL_IN
   end
 
   def new
@@ -28,9 +24,10 @@ class UsersController < ApplicationController
   def create
     @user = User.new user_params
     if @user.save
-      log_in @user
-      flash[:success] = I18n.t("static_pages.home.welcome")
-      redirect_to @user
+      @user.send_activation_email
+      UserMailer.account_activation(@user).deliver_now
+      flash[:info] = t "please"
+      redirect_to root_url
     else
       render :new
     end
@@ -53,7 +50,7 @@ class UsersController < ApplicationController
     else
       flash[:danger] = t "eror_destroy"
     end
-      redirect_to users_path
+    redirect_to users_path
   end
 
   private
