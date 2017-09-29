@@ -8,3 +8,5 @@ user:
   size: 80
 per_page:
   config: 7
+pass:
+  reset: 2

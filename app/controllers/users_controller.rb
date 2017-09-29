@@ -13,9 +13,7 @@ class UsersController < ApplicationController
 
   def index; end
 
-  def show
-    redirect_to root_url && return unless FILL_IN
-  end
+  def show; end
 
   def new
     @user = User.new
