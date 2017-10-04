@@ -31,7 +31,19 @@
 
 en:
   hello: "Hello world"
-  account: "akjckj"
+  Confir: "Confirmation"
+
+  resetpassw: "Reset password"
+  resetp: "Reset password"
+  forgotpassword: "Forgot password"
+  email_send: "Email sent with password reset instructions"
+  email_address: "Email address not found"
+  cant: "can't be empty"
+  password_r: "Password has been reset."
+  password_ex: "Password reset has expired."
+  password_resets:
+    new:
+      forgot: "Forgot password"
   static_pages:
     about:
       about: "About "
